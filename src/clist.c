@@ -110,6 +110,18 @@ int removeList(List *ls, int pos) {
     return ret_val;
 }
 
+List *concatLists(List *ls1, List *ls2) {
+    List *ls = initList();
+
+    for (register int i = 0; i < ls1->count; i++)
+        appendList(ls, ls1->arr[i]);
+
+    for (register int i = 0; i < ls2->count; i++)
+        appendList(ls, ls2->arr[i]);
+
+    return ls;
+}
+
 void printList(List *ls) {
     // printf("SIZE: %d\nCOUNT: %d\n", ls->size, ls->count);
     printf("[ ");
