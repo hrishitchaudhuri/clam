@@ -1,2 +1,2 @@
 # clam
-a C List Application Mechanism
+a C List Application Mechanism.

@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 #include "../src/clist.h"
 
 int main() {
